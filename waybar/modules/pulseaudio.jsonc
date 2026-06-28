@@ -1,0 +1,39 @@
+{
+    "pulseaudio": {
+        "format": "{icon}  {format_source}",
+        "format-muted": "<span foreground='#9ca0b0'></span>  {format_source}",
+        "format-source": " {volume}%",
+        "format-source-muted": "<span foreground='#9ca0b0'> {volume}%</span>",
+        "format-icons": {
+            "default": [ "󰕿", "󰖀", "󰕾" ],
+            "default-muted": "󰝟",
+            "headphone": "󰋋",
+            "headphone-muted": "󰟎",
+            "headset": "󰋎",
+            "headset-muted": "󰋐"
+        },
+        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+        "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle",
+        "on-click-middle": "pavucontrol --tab=3",
+        "on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SOURCE@ 5%+",
+        "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SOURCE@ 5%-",
+        "tooltip-format": "<b>Output</b>: {desc}\n<b>Input</b>: {source_desc}\n\n左键：静音扬声器\n右键：静音麦克风\n中键：打开混音器\n滚轮：调节麦克风音量"
+    },
+
+    "pulseaudio/slider": {
+        "min": 0,
+        "max": 100,
+        "orientation": "horizontal"
+    },
+
+    "group/audio": {
+        "orientation": "inherit",
+        "drawer": {
+            "transition-left-to-right": false
+        },
+        "modules": [
+            "pulseaudio",
+            "pulseaudio/slider"
+        ]
+    }
+}

@@ -1,0 +1,53 @@
+/* Audio start cap */
+#custom-left_div.7 {
+    color: @volume;
+}
+
+/* Audio → Tray */
+#custom-left_div.6 {
+    background-color: @volume;
+    color: @tray;
+}
+#tray {
+    padding: 0 8px;
+    background-color: @tray;
+}
+#tray > .needs-attention {
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* Audio group */
+#pulseaudio {
+    padding: 0 0 0 5px;
+    background-color: @volume;
+    color: @accent;
+}
+/* PulseAudio Slider */
+#pulseaudio-slider {
+    padding: 0 0 0 10px;
+    margin: 0;
+    background-color: @volume;
+}
+#pulseaudio-slider slider {
+    min-height: 0;
+    min-width: 0;
+    opacity: 0;
+    background-image: none;
+    border: none;
+    box-shadow: none;
+}
+#pulseaudio-slider trough {
+    min-height: 10px;
+    min-width: 80px;
+    border-radius: 5px;
+    background-color: @main-bg;
+}
+#pulseaudio-slider highlight {
+    min-width: 0;
+    border-radius: 5px;
+    background-color: @accent;
+}

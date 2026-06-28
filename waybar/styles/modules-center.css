@@ -1,0 +1,56 @@
+/* Memory start cap */
+#custom-left_div.2 {
+    color: @memory;
+}
+
+/* Memory → CPU bridge */
+#custom-left_div.4 {
+    background-color: @memory;
+    color: @cpu;
+}
+#memory {
+    background-color: @memory;
+}
+
+/* CPU */
+#cpu {
+    background-color: @cpu;
+}
+#custom-left_inv.1 {
+    color: @cpu;
+}
+
+/* Distro icon */
+#custom-left_div.5,
+#custom-right_div.2 {
+    color: @accent;
+}
+#custom-distro {
+    padding: 0 10px 0 5px;
+    background-color: @accent;
+    color: @main-bg;
+}
+
+/* Time */
+#custom-right_inv.1 {
+    color: @time;
+}
+#clock.time {
+    padding-right: 6px;
+    background-color: @time;
+}
+
+/* Date */
+#custom-right_div.3 {
+    background-color: @date;
+    color: @time;
+}
+#clock.date {
+    padding-left: 6px;
+    background-color: @date;
+}
+
+/* Date end cap */
+#custom-right_div.4 {
+    color: @date;
+}

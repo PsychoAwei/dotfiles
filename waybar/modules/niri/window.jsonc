@@ -1,0 +1,8 @@
+{
+    "niri/window": {
+        "format": "{title}",
+        "max-length": 60,
+        "tooltip": true,
+        "tooltip-format": "{title}\n{app_id}"
+    }
+}

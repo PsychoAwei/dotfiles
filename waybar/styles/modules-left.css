@@ -1,0 +1,17 @@
+/* Workspaces */
+#custom-right_div.1 {
+    color: @workspaces;
+}
+#workspaces {
+    padding: 0 1px;
+    background-color: @workspaces;
+}
+#workspaces button.active label,
+#workspaces button.focused label {
+    color: @accent;
+}
+
+/* Window */
+#window {
+    margin: 0 12px;
+}

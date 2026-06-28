@@ -1,0 +1,16 @@
+/* Hover */
+#pulseaudio:hover {
+    color: @hover-fg;
+}
+
+/* Warning */
+#memory.warning,
+#cpu.warning {
+    color: @warning;
+}
+
+/* Critical */
+#memory.critical,
+#cpu.critical {
+    color: @critical;
+}
